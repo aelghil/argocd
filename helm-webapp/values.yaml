@@ -1,12 +1,12 @@
-appName: myhelmapp
+appName: helmapp-prod
 
 port: 80
 
 configmap:
-  name: myhelmapp-configmap-v1
+  name: helmapp-configmap-v1
   data:
     CUSTOM_HEADER: 'This app was deployed with helm!'
 
 image:
-  name: devopsjourney1/mywebapp
+  name: nginxdemos/hello
   tag: latest
